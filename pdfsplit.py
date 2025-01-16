@@ -4,7 +4,7 @@ import sys
 
 #-----------分割pdf文件-------------
 # 需要安装库 pypdf (pip install pypdf)
-# 首先需要在 <本py文件所在目录> 中手动生成名为 <pdfsplitk.txt> 的分割描述文件
+# 首先需要在 <本py文件所在目录> 中手动生成名为 <pdfsplit.txt> 的分割描述文件
 # 分割描述文件 <pdfsplit.txt> 的 格式：
     # 第一行为要操作的pdf文件名字，需要包含完整的目录。
     # 下面各行为：初始页码 tab 结束页码
