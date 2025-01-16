@@ -16,7 +16,7 @@ writer = pypdf.PdfWriter()  # 创建一个PdfWriter类
 
 pdf_path=Path(Path(dir_name).joinpath(pdf_files_dir))
 for item in pdf_path.iterdir():
-    with open(item, "rb") as f: # 逐个打开需要合并的PDF    
+    with open(item, "rb") as f: # 逐个打开需要合并的PDF
         writer.append(f)  # 逐个将PDF读入writer中
 
 
@@ -25,9 +25,9 @@ wk_out_file_name=Path(dir_name).joinpath('combined.pdf')
 
 with open(wk_out_file_name, "wb") as f: # 如果wk_out_file_name不存在，则创建一个
     writer.write(f)  # 将添加书签后的PDF保存
- 
+
 # Close File Descriptors
 writer.close()
 
- 
+
 pass
