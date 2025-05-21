@@ -2,6 +2,7 @@ from pathlib import Path
 import pypdf
 import sys
 
+
 #-----------给pdf文件加书签-------------
 # 需要安装库 pypdf (pip install pypdf)
 # 首先需要在 <本py文件所在目录> 中手动制作名为 <pdfbookmark.txt> 的书签描述文件
