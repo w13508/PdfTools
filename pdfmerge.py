@@ -21,7 +21,7 @@ for item in pdf_path.iterdir():
 
 
 #Write to an output PDF document
-wk_out_file_name=Path(dir_name).joinpath('combined.pdf')
+wk_out_file_name=Path(pdf_path).joinpath('combined.pdf')
 
 with open(wk_out_file_name, "wb") as f: # 如果wk_out_file_name不存在，则创建一个
     writer.write(f)  # 将添加书签后的PDF保存

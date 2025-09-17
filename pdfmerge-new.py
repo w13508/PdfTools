@@ -18,17 +18,17 @@ writer = pypdf.PdfWriter()  # 创建一个PdfWriter类
 
 bookmark_gen_name = Path(dir_name).joinpath('combined-'+'pdfbookmark.txt')
 pdf_path=Path(Path(dir_name).joinpath(pdf_files_dir))
-wk_out_file_name=Path(dir_name).joinpath('combined.pdf')
+wk_out_file_name=Path(pdf_path).joinpath('combined.pdf')
 
 with open (bookmark_gen_name, "w",encoding='utf-8') as f:
     f.write(f"{wk_out_file_name}")
     pagenum=1
-    for item in pdf_path.iterdir():
+    for item in sorted(pdf_path.iterdir()): #新版pypdf还是cinnamon系统: 加sorted, 否则无法排序
         reader = pypdf.PdfReader(item)
         writer.append(reader)       
         f.write(f"\n{pagenum}\t{item.stem}")
-        pagenum=pagenum+reader.get_num_pages()
-        reader.close()
+        pagenum=pagenum+reader._get_num_pages() #新版pypdf: _get_num_pages()代替get_num_pages
+        # reader.close() #新版pypdf不需要close
 
     # with open(item, "rb") as f: # 逐个打开需要合并的PDF    
     #     writer.append(f)  # 逐个将PDF读入writer中

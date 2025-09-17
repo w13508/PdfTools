@@ -1,0 +1,24 @@
+/home/liuning/Mine/projects/PdfTools/pdf_files/combined.pdf
+1	0.0 - DCC Installing
+2	0.1 - Full DCC Job Scheduling and SLURM User Guide
+4	1 - DCC Login
+8	2.0 - Data Storage & Transfer: Overview
+10	2.1 - Data Storage & Transfer: Viewing Usage
+12	2.2 - Data Storage & Transfer: Permissions
+13	2.3 - Data Storage & Transfer: File Transfers
+15	2.4 - Data Storage & Transfer: Optimize Performance
+17	3. 0 - Software: about
+18	3.1 - Software: Modules
+19	3.2 - Software: User Installed
+20	3.3 - Software: Version Control with Git
+22	3.4 - Software: Containers
+25	4.0 - OnDemand: Index
+27	4.1 - OnDemand: Using a Jupyter Notebook
+30	4.2 - OnDemand: Using an RStudio Server
+32	4.3 - OnDemand: Managing package installations
+34	4.4 - OnDemand: Using DCC Desktop to launch other apps
+35	4.5 - OnDemand: Community Software
+36	5 - H200
+37	6 - Partitions
+41	7 - Scheduling Jobs
+50	8 - Usage Reports

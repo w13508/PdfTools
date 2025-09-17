@@ -169,3 +169,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# 忽略所有“.txt”结尾的文件
+*.txt 
+# 忽略 pdf_files/目录下的所有文件
+pdf_files/ 
