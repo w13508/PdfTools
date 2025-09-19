@@ -41,7 +41,7 @@ for item in splitlist:
     writer.close()
 
 # Close File Descriptors
-reader.close()
+# reader.close()
 
 
 pass
