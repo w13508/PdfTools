@@ -15,7 +15,7 @@ dir_name=Path(__file__).parent #当前py文件所在目录
 writer = pypdf.PdfWriter()  # 创建一个PdfWriter类
 
 pdf_path=Path(Path(dir_name).joinpath(pdf_files_dir))
-for item in pdf_path.iterdir():
+for item in sorted(pdf_path.iterdir()): #新版pypdf还是cinnamon系统: 加sorted, 否则无法排序
     with open(item, "rb") as f: # 逐个打开需要合并的PDF
         writer.append(f)  # 逐个将PDF读入writer中
 
